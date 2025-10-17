@@ -1,43 +1,41 @@
-# Next.js Tailwind Redux Dashboard
 
-This project is a starter dashboard built with Next.js, Tailwind CSS, Redux Toolkit and Recharts.
 
-## What's included
-- Mocked authentication API (`/pages/api/auth.js`) with credentials: `admin` / `password`
-- Login page (`/pages/login.js`) that calls the API
-- Data table (sorting, filtering, pagination) with XLSX and PDF export
-- Chart (Recharts)
-- Redux Toolkit store
-- Tailwind CSS setup
-- Dockerfile & docker-compose
+# Next.js Dashboard Assignment
 
-## How to run locally
+## Overview
+This project is a responsive dashboard built with *Next.js, **Tailwind CSS, **Redux Toolkit, and **Recharts*.  
+It includes authentication, a dynamic data table with filtering and sorting, data export options (PDF/XLSX), and Docker setup for deployment.
 
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Run dev server:
-   ```bash
-   npm run dev
-   ```
-3. Open http://localhost:3000
+## Features
+- *User Authentication* (mocked API)
+- *Dynamic Data Table* with sorting, filtering, and pagination
+- *Chart Visualization* using Recharts
+- *Data Export* to PDF and Excel
+- *Dockerized Environment*
+- *Mobile Responsive* with Tailwind CSS
 
-## Mock credentials
-- username: `admin`
-- password: `password`
+## Implementation Approach
+1. Used *Next.js* for server-side rendering and routing.
+2. Managed global state using *Redux Toolkit*.
+3. Implemented UI components with *Tailwind CSS*.
+4. Integrated *Recharts* for data visualization.
+5. Added *jsPDF* and *xlsx* libraries for exporting table data.
+6. Created *Dockerfile* and *docker-compose.yml* for containerization.
 
-## Docker
+## Demo Video
+🎥 [Click here to watch the demo](YOUR_VIDEO_LINK_HERE)
+
+## Setup Instructions
 ```bash
+# Clone the repository
+git clone https://github.com/ddd55tyg/nextjs-dashboard-assignment..
+cd nextjs-dashboard-assignment
+
+# Install dependencies
+npm install
+
+# Run locally
+npm run dev
+
+# Or run with Docker
 docker-compose up --build
-```
-
-## Demo recording script (included in repo as `DEMO_SCRIPT.md`)
-Follow the script to record a screen demo explaining the project.
-
-## To include your recorded demo
-Replace the file `demo-recording-placeholder.txt` with your recorded video (e.g. `demo.mp4`) in the repo root, then push to GitHub or keep it alongside the ZIP.
-
-## Notes
-- For production replace mocked auth with Firebase or a real backend.
-- PDF export is basic; for production consider `jspdf-autotable`.
