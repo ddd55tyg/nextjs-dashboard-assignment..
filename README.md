@@ -22,8 +22,6 @@ It includes authentication, a dynamic data table with filtering and sorting, dat
 5. Added *jsPDF* and *xlsx* libraries for exporting table data.
 6. Created *Dockerfile* and *docker-compose.yml* for containerization.
 
-## Demo Video
-🎥 [Click here to watch the demo](YOUR_VIDEO_LINK_HERE)
 
 ## Setup Instructions
 ```bash
